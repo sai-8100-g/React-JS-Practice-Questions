@@ -26,15 +26,15 @@ class Speedometer extends Component {
     const {count} = this.state
     return (
       <div className="speedometer-container">
-        <h1 className="speed-heading">SPEEDOMETER</h1>
+        <h2 className="speed-heading">SPEEDOMETER</h2>
         <img
           src="https://assets.ccbp.in/frontend/react-js/speedometer-img.png "
           alt="speedometer"
         />
-        <h1 className="speedometer-heading">
-          Speed is <span>{count}</span>mph{' '}
+        <h1 className="main-heading">
+          Speed is {count}mph{' '}
         </h1>
-        <p>Minimum is 0mph. Maximum is 200mph</p>
+        <p>Min Limit is 0mph, Max Limit is 200mph</p>
         <div>
           <button
             className="accelerate-btn"
